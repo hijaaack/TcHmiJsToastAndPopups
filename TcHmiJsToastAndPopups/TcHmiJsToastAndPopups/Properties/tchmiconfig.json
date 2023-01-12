@@ -48,6 +48,21 @@
       "name": "Fonts/Fonts.css",
       "description": "",
       "type": "Stylesheet"
+    },
+    {
+      "name": "JS/sweetalert2@11.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "CSS/toastr.min.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "JS/toastr.min.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [],

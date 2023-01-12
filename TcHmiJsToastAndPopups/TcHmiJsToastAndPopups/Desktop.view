@@ -2,4 +2,283 @@
   <div id="ViewDesktopBeckhoffLogo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-src="Images/Beckhoff_Logo.svg" data-tchmi-left="20" data-tchmi-top="20" data-tchmi-width="194" data-tchmi-height="57">
 
   </div>
+<div id="TcHmiButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Alarm" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "toastr.options = {",
+          "  \"closeButton\": false,",
+          "  \"debug\": false,",
+          "  \"newestOnTop\": true,",
+          "  \"progressBar\": true,",
+          "  \"positionClass\": \"toast-top-right\",",
+          "  \"preventDuplicates\": true,",
+          "  \"onclick\": null,",
+          "  \"showDuration\": \"300\",",
+          "  \"hideDuration\": \"1000\",",
+          "  \"timeOut\": \"5000\",",
+          "  \"extendedTimeOut\": \"1000\",",
+          "  \"showEasing\": \"swing\",",
+          "  \"hideEasing\": \"linear\",",
+          "  \"showMethod\": \"fadeIn\",",
+          "  \"hideMethod\": \"fadeOut\"",
+          "};",
+          "",
+          "toastr[\"error\"](\"Emergency Stop Activated\", \"Error\");"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-text="Warning" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 176, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_1.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "toastr.options = {",
+          "  \"closeButton\": false,",
+          "  \"debug\": false,",
+          "  \"newestOnTop\": true,",
+          "  \"progressBar\": true,",
+          "  \"positionClass\": \"toast-top-right\",",
+          "  \"preventDuplicates\": true,",
+          "  \"onclick\": null,",
+          "  \"showDuration\": \"300\",",
+          "  \"hideDuration\": \"1000\",",
+          "  \"timeOut\": \"5000\",",
+          "  \"extendedTimeOut\": \"1000\",",
+          "  \"showEasing\": \"swing\",",
+          "  \"hideEasing\": \"linear\",",
+          "  \"showMethod\": \"fadeIn\",",
+          "  \"hideMethod\": \"fadeOut\"",
+          "};",
+          "",
+          "toastr[\"warning\"](\"This is a warning!!\", \"Warning\");"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="240" data-tchmi-left-unit="px" data-tchmi-text="Info" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(0, 183, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_2.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "toastr.options = {",
+          "  \"closeButton\": false,",
+          "  \"debug\": false,",
+          "  \"newestOnTop\": true,",
+          "  \"progressBar\": true,",
+          "  \"positionClass\": \"toast-top-right\",",
+          "  \"preventDuplicates\": true,",
+          "  \"onclick\": null,",
+          "  \"showDuration\": \"300\",",
+          "  \"hideDuration\": \"1000\",",
+          "  \"timeOut\": \"5000\",",
+          "  \"extendedTimeOut\": \"1000\",",
+          "  \"showEasing\": \"swing\",",
+          "  \"hideEasing\": \"linear\",",
+          "  \"showMethod\": \"fadeIn\",",
+          "  \"hideMethod\": \"fadeOut\"",
+          "};",
+          "",
+          "toastr[\"info\"](\"You need a cup of coffee! :)\", \"Info\");"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Toast Notifications samples" data-tchmi-top="77" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="26">
+</div>
+<div id="TcHmiButton_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-text="Success" data-tchmi-top="123" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(2, 197, 13, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_3.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "toastr.options = {",
+          "  \"closeButton\": false,",
+          "  \"debug\": false,",
+          "  \"newestOnTop\": true,",
+          "  \"progressBar\": true,",
+          "  \"positionClass\": \"toast-top-right\",",
+          "  \"preventDuplicates\": true,",
+          "  \"onclick\": null,",
+          "  \"showDuration\": \"300\",",
+          "  \"hideDuration\": \"1000\",",
+          "  \"timeOut\": \"5000\",",
+          "  \"extendedTimeOut\": \"1000\",",
+          "  \"showEasing\": \"swing\",",
+          "  \"hideEasing\": \"linear\",",
+          "  \"showMethod\": \"fadeIn\",",
+          "  \"hideMethod\": \"fadeOut\"",
+          "};",
+          "toastr[\"success\"](\"All products completed\", \"Success\");"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Use this site to configure your toasts:" data-tchmi-top="183" data-tchmi-top-unit="px" data-tchmi-width="430" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+</div>
+<div id="TcHmiHtmlHost" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="29" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-top="209" data-tchmi-top-unit="px" data-tchmi-width="430" data-tchmi-width-unit="px">
+    <a href="https://codeseven.github.io/toastr/demo.html"> https://codeseven.github.io/toastr/demo.html</a>
+</div>
+<div id="TcHmiTextblock_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="36" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="SweetAlert Popups" data-tchmi-top="248" data-tchmi-top-unit="px" data-tchmi-width="320" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="26">
+</div>
+<div id="TcHmiButton_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="Basic" data-tchmi-top="294" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_4.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "Swal.fire('This is a message!!');"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="130" data-tchmi-left-unit="px" data-tchmi-text="Dialog 3Buttons" data-tchmi-top="294" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_5.onPressed",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "Swal.fire({",
+          "  title: 'Do you want to save the changes?',",
+          "  showDenyButton: true,",
+          "  showCancelButton: true,",
+          "  confirmButtonText: 'Save',",
+          "  denyButtonText: `Don't save`,",
+          "}).then((result) => {",
+          "  /* Read more about isConfirmed, isDenied below */",
+          "  if (result.isConfirmed) {",
+          "    Swal.fire('Saved!', '', 'success');",
+          "    console.log(\"Saved!\");",
+          "  } else if (result.isDenied) {",
+          "    Swal.fire('Changes are not saved', '', 'info');",
+          "    console.log(\"Not Saved!\");",
+          "  }",
+          "})"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-text="SweetAlert samples documentation" data-tchmi-top="353" data-tchmi-top-unit="px" data-tchmi-width="430" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+</div>
+<div id="TcHmiHtmlHost_1" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="29" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="px" data-tchmi-top="379" data-tchmi-top-unit="px" data-tchmi-width="430" data-tchmi-width-unit="px">
+    <a href="https://sweetalert2.github.io/#examples">https://sweetalert2.github.io/#examples</a>
+</div>
 </div>
