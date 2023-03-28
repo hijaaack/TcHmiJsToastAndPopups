@@ -115,6 +115,7 @@
     <Folder Include="Imports" />
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
+    <Folder Include="JS\SweetAlert" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
     <Folder Include="JS" />
@@ -134,6 +135,13 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="JS\sweetalert2%4011.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="JS\SweetAlert\SweetPopupWrite.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>JS\SweetAlert\SweetPopupWrite.js</DependentUpon>
+    </Content>
+    <Content Include="JS\SweetAlert\SweetPopupWrite.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="JS\toastr.min.js">

@@ -63,6 +63,21 @@
       "name": "JS/toastr.min.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "JS/SweetAlert/SweetPopupReturnBool.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "JS/SweetAlert/SweetPopupSymbolRefWrite.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "JS/SweetAlert/SweetPopupWrite.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [],
@@ -75,7 +90,17 @@
       "preloadBindings": false
     }
   ],
-  "userFunctions": [],
+  "userFunctions": [
+    {
+      "url": "JS/SweetAlert/SweetPopupReturnBool.js"
+    },
+    {
+      "url": "JS/SweetAlert/SweetPopupSymbolRefWrite.js"
+    },
+    {
+      "url": "JS/SweetAlert/SweetPopupWrite.js"
+    }
+  ],
   "symbols": {
     "internal": {},
     "themedResources": {}
